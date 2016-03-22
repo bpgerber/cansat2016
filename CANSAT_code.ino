@@ -36,7 +36,6 @@ void setup() {
   
   //Configure the sensor
   myPressure.setModeAltimeter(); // Measure altitude above sea level in meters
-  
   myPressure.setOversampleRate(7); // Set Oversample to the recommended 128
   myPressure.enableEventFlags(); // Enable all three pressure and temp event flags 
 
@@ -57,8 +56,6 @@ void loop() {
   float temperature = myPressure.readTempF();
   Serial.print(" Temp(f):");
   Serial.print(temperature, 2);
-
-  
 
   Serial.println();
 
